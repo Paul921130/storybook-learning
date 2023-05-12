@@ -9,10 +9,10 @@
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "commit": "cz"
+    "commit": "cz",
+    "prepare": "husky install"
   },
   "dependencies": {
-    "@types/node": "20.1.2",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
     "commitizen": "^4.3.0",
@@ -26,6 +26,9 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-angular": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
     "@storybook/addon-essentials": "^7.0.10",
     "@storybook/addon-interactions": "^7.0.10",
     "@storybook/addon-links": "^7.0.10",
@@ -36,6 +39,7 @@
     "@storybook/testing-library": "^0.0.14-next.2",
     "@types/styled-components": "^5.1.26",
     "eslint-plugin-storybook": "^0.6.12",
+    "husky": "^8.0.3",
     "storybook": "^7.0.10"
   },
   "config": {
